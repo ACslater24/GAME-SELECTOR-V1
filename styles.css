@@ -1,0 +1,83 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun font */
+    background-color: #ffeb3b; /* Bright yellow background */
+    margin: 0;
+    display: flex;
+    height: 100vh; /* Full viewport height */
+}
+
+#content {
+    width: 70%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* White background for card effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    position: relative; /* To position inner elements */
+}
+
+#image-container {
+    width: 30%;
+    height: 100vh; /* Fixed height to fill the viewport */
+    background-color: #f6b33f; /* Updated color */
+    background-image: url('game-image.png'); /* Ensure this matches your image file name */
+    background-size: 100%; /* Set to 25% of the container */
+    background-repeat: no-repeat; /* Prevent repeating */
+    background-position: center; /* Center the image */
+}
+
+h1 {
+    color: #ff4081; /* Pink color */
+}
+
+.cta-btn {
+    background-color: #ff4081;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #f50057; /* Darker pink */
+}
+
+.game-card {
+    background-color: #e0f7fa; /* Light blue */
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.result-message {
+    display: none;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #43a047; /* Green */
+}
+
+#win-condition {
+    display: none;
+    color: #ff4081; /* Pink */
+}
+
+#resetBtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: none; /* Initially hidden */
+}
+
+#resetBtn:hover {
+    background-color: #f50057; /* Darker pink */
+}
